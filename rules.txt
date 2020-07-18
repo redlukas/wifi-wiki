@@ -1,0 +1,34 @@
+#No self-promo!
+* Links to personal Blogs and How-To's are allowed as long as they are relevant and/or cite credible sources. When in doubt, consult Reddits guide on self-promotion.
+* Please stick to english. 
+* No slideshow lists/listicles!
+* No tracked/affiliated links.
+
+#Explain your Problem!
+No "The Title says it all". If you want people to take the time to help you with your problem, take the time to explain it to them properly. The better you describe your issues, the better we will be able to help you. If your post seeks help, it must contain a text body (or a comment, in the case of a link), otherwise it will be deleted.
+
+##How to describe your Problem so people will actually help you
+This starts with providing as much info about your setup as possible. Information that is helpful includes, but is not limited to: 
+
+* What behaviour did you expect?
+* What beaviour did you observe?
+* What have you tried to mitigate the problem?
+* What is the Make and Model of the Devices involved?
+
+##Important for speed related questions:
+Before you post anything about your upload/download speed, hook your device up to your router with an ethernet cable and rerun the test. If it is more or less the same, your problem is not WiFi related and does not belong in this sub. If you do not run the wired test we will not be able to help you, as it would be the first question we'd ask you anyway.
+
+#Read the Wiki
+It contains a lot of answers to commonly asked questions. If your post was removed but you feel like your question has not been answered by the FAQ, feel free to resubmit your question with a [RESUB] tag.
+
+#We are not here to help you gain unauthorized access to networks.
+Including, but not limited to school networks, work networks, hotel networks and your parent's network.
+
+#No Links from new accounts
+Accounts with less than 200 combined Karma and/or are less than 2 Weeks old must not post links. Self posts, especially those asking for help are welcome from all Accounts.
+
+#We are not here to fix your ISP problems!
+WiFi and Internet access are two different things. While questions about Internet access generally wont be deleted, they have a better chance of being answered in /r/isp, /r/cellphonedeal/ or /r/techsupport. Posts with speedtests to resources on a different Subnet will be deleted. To do a Speedtest that actually tests your WiFi Speed, use iPerf and make sure your WiFi is the Bottleneck.
+
+#Help other by marking your problems as solved!
+Please reply if an answer has solved your ploblem. If you were able to do it yourself, please write down how you were able to. Many others who stumble about this sub might profit!
