@@ -1,0 +1,86 @@
+# Q: I don't get Wifi reception in my whole house, what do I do?
+## Most stable solution
+Run [cable](http://www.amazon.com/s/ref=sr_nr_p_n_feature_keywords_6?fst=as%3Aoff&rh=n%3A172282%2Cn%3A541966%2Cn%3A172456%2Cn%3A172463%2Cn%3A464398%2Cn%3A9938478011%2Ck%3Acat6+cable%2Cp_n_feature_keywords_five_browse-bin%3A7800930011&keywords=cat6+cable&ie=UTF8&qid=1455364965&rnid=7800923011) to every corner of your house and hook up access points (NOT ROUTERS!). Please remember to put them on different channels. You might have to adjust power output levels of the access points so the clients switch over automatically.
+## Option with less cables and less instalation hassle
+Use [Powerline](https://www.youtube.com/watch?v=YTD2e9mIoaE). You will be able to use your existing 110V/230V electric lines to also carry network signals. There are even adaptors that directly take the network signal out of the power plug and [give you Wifi](http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=Powerline+wifi&rh=i%3Aaps%2Ck%3APowerline+wifi).
+
+##What about Repeaters/Range extenders?
+Repeaters take a weak WiFi Signal and rebroadcast it. They are often a suggested solution because they are viewed as easy to install as being "foolproof". However, there is more to it than meets the eye. First: Location. Don't install a repeater just beside the Laptop/Phone you want to use. This device will indicate "full bars". But since the Repeater has about the same distance to cover as the other device would, speeds will not be significantly better. So it is important to place the extender somewhere where there is still decent reception and let the signal be boosted from there. Second: channels and RF spectrum use. Since every Packet is effectively transmitted twice the use of a Repeater will basically double the data on the air. So make sure that the base station and the Repeater operate on non-overlapping channels, i.e. 1, 6 and 11. But since you use twice the airtime, you are also twice as likely to interfere with other devices on the air, wich is where the basic, unavoidable weakness of repeaters lies. So you have to be twice as careful in your channel selection. Because of all those caveats and the host of better alternatives, I strongly discourage the use of Repeaters.
+
+##Will Mesh WiFi be the end of all my woes?
+No. While Manufacturers want you to believe that Mesh is a silver Bullet, it certainly is not. Mesh simply combines the advantages of having a lot of spread out access points with the advantages of wireless communication, specifically not having to run cabling everywhere. While a repeater connects to the normal WiFi the main router emmits (the same WiFi any other devices would also connect to), a mesh basestation emits two seperate signals: one for normal devices (think phones, laptops,...) to connect to and a seperate one for the mesh satelites to connect to, called a backhaul. Those satelites in turn emit the same "normal" network for phones and laptops as the basestation, so those devices can connect to the same network via either the basestation or any of the satellites. What makes mesh extra cool is that the backhaul does not necessairily have to go from a satellite directly to the basestation, but it may jump from satellite to satellite before eventually reaching the basestation. All this does come at a cost, and the main one stems from the wireless backhaul. Since all the transmitted information has to be translated between electrical signals and airwaves at least once more than if the access point were connected to the router via cable and because this process takes time, you will experience significantly higher round-trip times for your traffic. This will hurt you especially for tasks that require you to send and recieve time-sensitive data like for online gaming (particularly FPS titles) and voice/videocaling. A second disadvantage is that by relying on a wireless backhaul you introduce a new network to the airwaves. This network has to fit in somewhere in the wireless spectrum, not interfere with any existing neworks and reliably reach the connected satellites. Basically you are introducing a whole host of new failure points. In conclusion: Mesh WiFi might be right for you, but it is neither as foolproof nor as set-and-forget as manufacturers make it out to be.
+
+# Q: Why can't i just crank up the output power of my Wifi gear so i'll have better reception? How about putting a bigger antenna on the device? 
+First, your devices are not engineered for higher output. You'll simply fry them.
+
+Second, the FCC regulates the maximum power output of consumer devices. This is for a number of reasons. Some of them being less interference, less (potentional) damage to radio-sensitive persons, but foremost less traffic on an already well used frequency band. If you only have to avoid interference in a 20m radius, that's a lot less of a headache than in a 100m radius.
+
+# Q: I live within throwing distance of my school/parents/... and dont want to pay for my own internet. Is there an option for me? AkA how do I get WiFi to my Shed/Outhouse/Mancave etc.
+
+Yes, there is. [Directional antennas](http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=directional+antenna+wifi&rh=i%3Aaps%2Ck%3Adirectional+antenna+wifi). Since they don't spread out their signal over a wide area but keep it concetrated in a narrow beam, you get a lot more distance out of them. Keep in mind: WiFi signals go both ways, so there is no point in only upgrading one side. Both sides have to be able to cover the distance. Check out [this tutorial](http://www.makeuseof.com/tag/how-to-turn-an-old-router-into-a-wireless-bridge/) to learn how to DIY a bridge with a couple of older routers or watch [this video](https://youtu.be/LG-AZz_nm5Elearn) to see it being done with specialized hardware. You can use [this Tool](https://airlink.ubnt.com/) by Ubiquiti to find out if a point-to-point Link is possible in your specific case. If the Distance is less than 100 Meters and you can dig a trench, you can even run an ethernet cable, which will always be the most reliable solution.
+
+# Q: What do the letters like a/b/g/n and ac or Numbers like WiFi 5 or WiFi 6 stand for?
+
+They are different revisions of the [IEEE802.11 Standard](https://en.wikipedia.org/wiki/IEEE_802.11). From a consumer standpoint, they signify different Wifi speeds. b being the slowest, then a and g, then n and ac being the fastest.
+
+
+
+Standard | Letter designation | **Theoretical** Max. Speed (MBit/s)| Frequency band (GHz)
+---|---|----|----
+WiFi 1 | a | 54 | 5
+WiFi 2 | b | 11 | 2.4
+WiFi 3 | g | 54 | 2.4
+WiFi 4 | n | 600 | either
+WiFi 5 | ac | 2340 | 5
+WiFi 6 | ax | 11000 | 1-6
+
+
+# Q: What's the big deal with the 2.4 and 5 GHz frequencies?
+
+802.11 n can operate on both frequency ranges (but might not be available on all devices), while a and ac are only 5 Ghz and b/g are only on 2.4 GHz. Typically, 2.4 GHz connections are slower and more prone to interference, because a vast majority of WLAN devices use it. The 5 GHz range is much less crowded. So you have to worry less about your neighbours and have a faster connection. There is only one caveat: the 5 GHz radiowaves travel way worse trough obstacles. So if you have a lot of thick walls in the way, the 5 Ghz signal will be a lot weaker than the 2.4 ghz one.
+
+It is important to note that there are no technical similarities between WiFi signals on the 5GHz spectrum and 5G cellular connections, further than both using some kind of manipulation of the electromagnetic field. They are not intercompatible. 5GHz is used to connect multiple decices in your home together, 5G is used to establish a connectio to a cellular network provider. 
+
+# Q: So how do i find out if my network interferes with one of my neighbours? AKA My wireless speed is terrible but all wired devices work fine
+
+Interference can cause poor connection speeds and mess up your day. In the WLAN protocol, only one device at a time can send data, every other device has to wait their turn. It's bad enough you have to wait for all of your devices, you would not want to also have to wait for your heighbour's. So it is essential, that you avoid being on the same channel as the access points next to you.
+
+If you are affected, you will have very bad wireless speeds even though your device shows a full strength signal. 
+
+I recommend a tool called inSSIDer. It is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). If you don't want to pay i recommend [Wifi analyzer](https://play.google.com/store/apps/details?id=com.farproc.wifi.analyzer). InSSIDer will recomend you the best channel to put your access point on based on the Wifi environment it sees.
+
+# Q: What are the best channels to put my Wifi on?
+
+Wifi channels are spaced 5 Mhz apart, but a Wifi signal has a bandwith of 20 Mhz (at it's slimmest). This means that an access point on channel 2 will have 75% overlap with an access point on channel 1 or 3. Wich will cause you to run into the same problems as if they were on the same channel. Packets will be dropped, resulting in a poor signal quality. Therefore it is best to use non overlapping channels. The common thing to do is to put the 2.4 Ghz devices either on channel 1, 6 or 11. With 5 Ghz devices you have to worry a lot less about overlap due to reasons discussed above.
+
+# Q: What encryption should I use?
+
+For home use, the best solution is WPA2-PSK. If the configuration page asks you wich cipher you want to use, choose CCMP. All but the very oldest devices will support this encryption. 
+
+Use a strong password. This means more than 12 characters, use upper and lowercase characters, numbers and special characters. Refrain from using words that can be found in a dictionairy or things like birthdays, wedding days etc.
+
+Disable WPS-PIN. It is meant to give you easier access to your Wifi wich means that unauthorized persons also have easier access.
+
+Steer clear of WEP encryption. If you use it, your network password can be found out in less than five minutes.
+
+Remember: if unauthorized persons gain access to your Wifi, not only will they have free internet but everything they do online will come back to you. Be it filesharing, online fraud etc...
+
+# Q: My parents have grounded me and have restricted my Wifi access. How can i get it back?
+
+Ask them for it. Or ask /r/howtohack. Same if you want to access your neighbours Network without asking them.
+
+# Q: My work/uni/hotel has some restriction on their network about how many devices i can connect to the WiFi at a given time. How can i bypass this restriction?
+
+You dont. This restriction is in place for a reason, it is their network, if you dont like it, use some different means to access the Internet to do your Netflix-binge. If you have a more legit reasonas to why you need this restriction lifted, talk to IT about it. Dont go behind their backs, you dont want a pissed off Sysadmin as your foe.
+
+# Q: What is the difference between WiFi and Internet?
+
+WiFi interconnects the devices in your home. It estabilshes the connection from your laptop to your wireless printer, or from your PlayStation to your router. Your router establishes the connection to your Internet Sercive Provider (The likes of AT&T, Comcast, Time Warner Cable, Grapevine, BT, Sky Broadband etc.). The connection to your ISP (and therefore Internet connectivity) is what you pay for on a monthly basis. If your router is connected to the internet, it will offer that connection to your home network, making the internet accessible over WiFi.
+
+Settings concerning your WiFi such as channel, 802.11 protocol, connected clients and passwords are generally managed by you and do not affect the contract you have with your ISP. Conversely, your internet speed is something you negotiate with your ISP. Most providers allow you to select a service tier, distinguished by the maximum down/up speed one can expect. Typically, your WiFi is 10-100 times faster than your internet connection. So when you do a check on [speedtest.net](http://www.speedtest.net/), the limiting factor for speed will most likely be your internet connection.
+
+To add to the confusion, many ISPs nowadays will sell, lease or rent a WiFi router to you. Those devices are often locked down severely and backdoored, so WiFi setting changes might have to go trough your ISP. Whenever possible, i suggest avoiding ISP-provided routers and supplying your own. Not only does that make you less depandant from your ISP in terms of settings and technology used but it puts up an additional barrier to them creeping into your home network.
+
+# Q: What WiFi should i use for Gaming?
+
+None. Multiplayer Gaming should be done on a wired connection. This answer is not gonna change just because you say that your case is special. The next best thing after a wired connection are Powerline and [MoCa](https://en.wikipedia.org/wiki/Multimedia_over_Coax_Alliance). But do keep in mind: The more you convert the Signal to different Protocols/transmission modes the more your Ping will go up.
