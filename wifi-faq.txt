@@ -1,0 +1,217 @@
+# Wi-Fi 101 — Frequently Asked Questions
+
+## Table of Contents
+  
+- What is Wi-Fi?
+- Where does Wi-Fi come from? What is a router? What is an access point?
+- What do letters like a/b/g/n/ac/ax, or numbers like Wi-Fi 5 or Wi-Fi 6 stand for?
+- What's the difference between 2.4 and 5 GHz?
+- My Wi-Fi stinks! What do I do?
+- How can I make my Wi-Fi faster?
+- Why can't i just turn up the power of my Wi-Fi?
+- How do I get Wi-Fi over long distances?
+- What are the best Wi-Fi channels to use?
+- What encryption should I use?
+- How can I bypass restrictions on my school/work/university network?
+- Is Wi-Fi related to 5G?
+- What is the difference between Wi-Fi and Internet?
+- Is Wi-Fi OK to use for Gaming?
+- How does Wi-Fi work?
+
+## What is Wi-Fi? What does Wi-Fi do? 
+
+Wi-Fi is a brand name for wireless networking standards. Wi-Fi lets devices communicate by sending and receiving radio waves. 
+
+Wi-Fi transmits data using microwaves, which are high-frequency radio waves, usually in the 2.4 GHz and 5 GHz ranges. Wi-Fi is more complicated than FM radio, but the basic underlying technology is the same. They both encode information into radio waves, which are received and decoded. FM radio does this for sound, Wi-Fi does this for computer data. If you want more detail on how Wi-Fi works, [read that here](https://evanmccann.net/blog/wifi-101/how-wifi-works).
+
+## Where does Wi-Fi come from? What is a router? What is an access point? 
+
+Wi-Fi comes from a wireless access point. Most consumer "routers" really cover multiple functions. They are usually a router, wireless access point, and switch — all in one device. Sometimes they even include a modem, if your Internet service provider (ISP) requires one.
+
+- **Routers** take data packets from one network (the Internet) and move them to another network (your internal, local network). It's the post office of networking, sending things where they need to go.
+- **Wireless access points** take in an Internet connection and turn it into radio waves (Wi-Fi), allowing you to connect wirelessly.
+- **Switches** multiply ports. Typical home routers include a 4-port switch, letting you plug a few devices into the LAN side of your router. 
+- **Modems** modulate and demodulate an encoded signal from your Internet service provider. This is sometimes integrated into the same device, and sometimes a separate device. If you have coax cable Internet, usually you will need a modem of some kind to get your Internet access. If you have DSL, same story, but with analog phone lines. If you have fiber internet, usually you will require an ONT (Optical Network Terminal) which does the same function. A modem or an ONT typically give you an Ethernet connection to plug into your router/switch/access point.
+- More [common networking terms are defined here](https://evanmccann.net/blog/defining-network-terms)
+
+## What do letters like a/b/g/n/ac/ax, or numbers like Wi-Fi 5 or Wi-Fi 6 stand for?
+
+They are different revisions of the [IEEE802.11 Standard](https://en.wikipedia.org/wiki/IEEE_802.11). They signify different Wi-Fi generations, which have different speeds and capabilities. 
+
+Wi-Fi 6, also known as 802.11ax, is the latest generation of Wi-Fi as of July 2020. [Wi-Fi 6E](https://evanmccann.net/blog/wifi-6) is an extension of Wi-Fi 6 into the newly added 6 GHz spectrum. Wi-Fi 6 devices are becoming more common, but Wi-Fi 6E devices are still extremely rare.
+
+Standard | Letter | Max Data Rate|  Frequency band (GHz)
+---|---|----|----
+WiFi 1 | b | 11 Mbps | 2.4 GHz
+WiFi 2 | a | 54 Mbps | 5 GHz
+WiFi 3 | g | 54 Mbps | 2.4 GHz
+WiFi 4 | n | 600 Mbps | 2.4/5 GHz (5 is optional)
+WiFi 5 | ac | 2340 Mbps | 5 GHz
+WiFi 6 | ax | 11000 Mbps | 1-6 GHz
+
+## What's the difference between 2.4 and 5 GHz frequencies?
+
+There are a lot of differences between 2.4 and 5 GHz. They are both unlicensed spectrum, meaning that anyone can transmit there. The specific spectrum available depends on what country you're in, but generally:
+
+### 2.4 GHz 
+- Longer range than 5 GHz
+- Generally slower than 5 GHz
+- Only 3 channels available — channels 1, 6 and 11. (20 MHz-wide)
+	- 20 MHz channels are most common
+	- 40 MHz channels can be used if bandwidth is more important than interference or range.
+- More prone to interference than 5 GHz
+	- Only 3 channels to use, if those are in use you have to wait. 
+	- Microwave ovens, Bluetooth, baby monitors, florescent lights, smart home equipment, and tons of other things all interfere with 2.4 GHz frequencies. This can cause issues with Wi-Fi performance.
+
+### 5 GHz 
+- Shorter range than 2.4 GHz
+	- 5 GHz signals travel roughly half as far
+	- Doesn't penetrate walls as well as 2.4 GHz
+- Generally faster, and allows for wider channels than 2.4 GHz
+	- Channels can be 20, 40, 80 or 160 MHz wide.
+	- Wide channels in 5 GHz will give you the fastest Wi-Fi speeds
+- Less prone to interference than 2.4 GHz
+	- 23 (20 MHz-wide) channels available 
+	- Less non-Wi-Fi devices use 5 GHz spectrum
+	- DFS Channels are special -- if your AP senses radar transmissions it is legally forced to back off. Don't use DFS channels if you live near an airport or other source of radar. 
+
+### Supports 2.4 GHz:
+- Wi-Fi 1 (802.11b)
+- Wi-Fi 3 (802.11g)
+- Wi-Fi 4 (802.11n)
+- Wi-Fi 6 (802.11ax)
+
+### Supports 5 GHz:
+- Wi-Fi 2 (802.11a)
+- Wi-Fi 4 (802.11n) *5 GHz support is optional for 802.11n -- a lot of cheaper/older 802.11n devices are 2.4 only.* 
+- Wi-Fi 5 (802.11ac)
+- Wi-Fi 6 (802.11ax)
+
+##  My Wi-Fi stinks! What do I do?
+### Adjust settings or placement of the source of your Wi-Fi
+
+Placing the source of your Wi-Fi as centrally as possible is the best way to ensure even coverage. In larger homes, one access point might not be enough to cover the entire area. If this is the case, there are multiple options for improving your coverage. Start with trying to place the AP centrally, and see if that helps. If you don't have the budget or ability to purchase new equipment, this is a good first step.
+
+The objects in the area around your AP can affect the strength of your Wi-Fi network. Try to keep your AP away from sources of interference, such as other electronics, walls, magnets, metal, microwaves, and things like that. Try to place it above head height, if possible. If you have antennas that are adjustable, it's a good idea to have them set at different angles to ensure an even spread of coverage. If you want more detail on access point placement, [ArsTechnica's unofficial guide](https://arstechnica.com/gadgets/2020/02/the-ars-technica-semi-scientific-guide-to-wi-fi-access-point-placement/) is a great start. 
+
+If you have tried these basic things and are still having issues, that's a good thing to start ask questions about on a support forum like [r/wifi](https://www.reddit.com/r/wifi/), or other forums. Be sure to include the specifics of which equipment you have, the problems you're having, and the things you have tried so far. If your current equipment isn't cutting it, or won't reach your entire house, there are a couple other common things to try.
+
+### Run Ethernet cabling, if possible
+
+The best option for a bigger Wi-Fi network is multiple access point with a wired backhaul. If it's possible, run [Cat 6 Ethernet cable](https://amzn.to/3fVWhQ1) to key locations in your house, and place access points there. There's a lot to consider for this kind of network. Access point placement, quantity, type, and a lot of other things are just as important as having multiple access points. The right solution depends on your budget, and what you want your network to do. The [ArsTechnica article on access point placement](https://arstechnica.com/gadgets/2020/02/the-ars-technica-semi-scientific-guide-to-wi-fi-access-point-placement/) is a good place to start if you're not sure how to design your wireless network with multiple access points.
+
+### Powerline or MoCA bridges might be an option if you can't run Ethernet
+Use [Powerline adapters](https://amzn.to/32y82Il) to use existing electrical wiring, or [MoCA bridges](https://amzn.to/32v5v1H) to use existing coax cabling. 
+
+With powerline equipment, you will be able to use your existing 110V/230V electric lines to carry network signals. There are even adaptors that directly take the network signal out of the power plug and [give you Wi-Fi](https://amzn.to/3heXz8J). Power line equipment is typically good for latency, but have lower throughput and slower speeds than Ethernet or MoCA. They do the same function as Ethernet cabling, they just get a network signal from one place to another. You will also need the other parts, such as a router and access points.
+
+MoCA bridges do the same function as powerline equipment, letting you use existing coaxial cabling rather than running Ethernet. MoCA bridges have a higher throughput limit than powerline equipment does, and generally MoCA bridges can be a good solution if you already have coax cabling in your house and are unwilling or unable to run Ethernet.
+
+### What About Repeaters or Range Extenders?
+
+Repeaters take a weak Wi-Fi Signal and rebroadcast it. They are often a suggested solution because they are easy to install. However, repeaters usually cause their own problems, and generally aren't the best solution. 
+
+If you do decide to go with a repeater, it's important to place it correctly, and use the right equipment. If possible, stick with the same brand and speed capabilities as your main wireless network. It won't do you much good to rebroadcast a Wi-Fi 6 network with a Wi-Fi 4 repeater. Any devices connecting to that repeater will be limited to the lower speeds it can support.
+
+Location is also important. You generally want to put the repeater close enough to your source of Wi-Fi for it to get a strong signal, but far enough away it actually extends the network. Having the extender 5 feet away from your main access point will do more harm than good. Having it 200 feet away means it probably won't get a signal at all. Somewhere around halfway between your main access point and they furthest place you want to cover is usually best. There are many other things to consider, such as using non-overlapping channels. 
+
+Without getting bogged down in the details, wireless repeaters and extenders are usually not going to be a good solution. Mesh network kits will perform better, and a wired backhaul system will be better than that. Unless you're on a really tight budget, I strongly discourage the use of repeaters or extenders.
+
+### What About Mesh Wi-Fi?
+
+Mesh wireless networks give you the advantage of multiple access points, without needing to run cabling everywhere. Mesh systems typically work better than a standalone all-in-one router with an added wireless repeater, and there's a lot of reasons for that. 
+
+A typical wireless repeater essentially reduces your throughput to half. You can imagine an outfielder in baseball, who needs to catch every packet and relay it back to home plate. Adding in those extra wireless "hops" between your main access point and your wireless repeater limits speed, increases latency, and can be unreliable. I do not recommend you add on to your existing wireless network with any kind of "repeater" or "extender".
+
+Mesh wireless kits like the [Eero](https://amzn.to/3fHTCsS), [Netgear Orbi](https://amzn.to/2DTpEUI), [Linksys Velop](https://amzn.to/3jlzu20), or [UniFi Dream Machine](https://amzn.to/3eO8LHH) with [BeaconHD](https://amzn.to/2WBq490), are all designed to work without a wired connection. They are designed to work over wireless backhaul, and generally will give you much better results than adding on a repeater to your existing system.
+
+If possible, always run cabling of some kind to your access points. Mesh wireless kits are convenient, but you're never going to be a wired backhaul system for latency-sensitive applications like gaming or video conferencing. For a lot of people, mesh Wi-Fi kits are the best combination of ease of use and good-enough performance. It depends what you are looking for.
+
+## How can I make my Wi-Fi faster?
+
+Buying better equipment can help, to a point. Wi-Fi is always going to be less consistent than a wired network, but under ideal situations you can get hundreds of Mbps from your Wi-Fi network. As you add more devices and get further away from your access point, your Wi-Fi will slow down. If you are able to upgrade to a multiple AP or mesh system, you are more likely to have good speeds over a larger area. It's also worth examining the settings of your current network, especially basic settings like which channels and channel widths you're using.
+
+With Wi-Fi, only one device can send data at a time. While a devices is transmitting, every other device in the area has to wait. If you are in a crowded area, or on the same wireless channel as another nearby access point, you may experience poor performance or have other issues. This is why picking the correct channels can have a big impact on your Wi-Fi performance. You'll want to be using the least used channels around you for the best performance.
+
+The best way to check what channels are in use is a tool like [NetSpot](https://www.netspotapp.com/) or inSSIDer. InSSIDer is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). Most free Wi-Fi analyzers will let you do the same thing.
+
+With those apps, you are able to see the channels in use in your area. If you are able to move your network to an unused channel, you will be much better off. Sometimes letting the access point choose is a better option. Do what's best for your network.
+
+Another aspect of channels besides which one you are using is how wide the channel is. Typically, 2.4 GHz networks use 20 MHz-wide channels, and speeds are quoted on that. With 20 MHz-wide channels, you can use channels 1, 6, or 11 without interfering with each other. If you use 2, 3, 4, 5, or any of the other "in-between" channels, you're going to make things worse. Using a channel besides 1, 6, or 11 causes interference on 2 of those common channels, making Wi-Fi worse for everyone around you. 
+
+With 5 GHz, there are a lot more channels available, and you don't need to stick to just 20 MHz-wide. You have the option of stepping up to 40 MHz, 80 MHz, or even 160 MHz wide-channels. As the channels get wider, the signal can carry more data, but you are more likely to encounter interference, because you need a larger piece of spectrum to be available. Devices that support 160 MHz-wide channels are very rare, and 40 or 80-MHz usually offer the best speeds while still being reliable. 
+
+If you're in a situation where you need to support a lot of devices and don't care about getting the maximum speed, using the 20 MHz-wide channels in 5 GHz is probably a better option. Everything about Wi-Fi is a trade off, and it's up to the person controlling the network to make the correct choices. 
+
+## Why can't i just turn up the power of my Wi-Fi? What about a bigger antenna?
+
+The FCC and other agencies regulate the maximum power output of consumer Wi-Fi devices. If you're using an all-in-one devices from your ISP, you're probably already at maximum power. A lot of consumer home networking equipment default to being as high-powered as possible, and modifying your antennas or the equipment to increase that limit are illegal, and won't work how you want. 
+
+There are a number of reasons for this. You can imagine a Wi-Fi access point as a speaker. Have you ever heard a speaker that's turned up too loud? The same sort of thing happens with wireless transmissions. Access points are designed for a specific power output, and going beyond that can lead to poor results. A far better option for a good spread of Wi-Fi is to use multiple, quieter, access points instead of one really loud one. 
+
+When you go to concert, you don't see one big speaker on stage, you see tons of speakers, and speakers throughout the seating area. This ensures an even spread of the signal over a larger area. The same thing applies to wireless signals, especially in the faster 5 GHz frequency. 
+
+5 GHz signals degrade quickly, and don't travel through objects well. This is actually an advantage in a lot of networks, because it limits the area that the ([cell size](https://www.cwnp.com/uploads/jerome-henry_understanding-cell-size.pdf)) of the AP covers. This limits the number of devices per access point, and gives a better experience for those connecting to it. Having multiple, carefully placed sources of Wi-Fi will give you the best results over a larger area. For a smaller home, this may only require a one or two access points. Things get more complicated when trying to cover larger areas.
+
+## How do I get Wi-Fi over long distances? 
+
+If mesh networking or multiple omnidirectional access points won't reach, [Point-to-point wireless bridges](https://amzn.to/2CQuAsS) are the best way to get Wi-Fi over a longer range. Point-to-point bridges concentrate their signal in a narrow beam, allowing you to cover a lot more distance. Just like how you need a wireless access point and a client device to use Wi-Fi at home, you need to have a point-to-point radio at either side to form a long-distance wireless bridge.
+
+[Chris from Crosstalk Solutions](https://www.youtube.com/watch?v=nzoHDCUlwTs) has a good overview of what a wireless bridge is, and how to set one up. You can use [this Tool](https://airlink.ubnt.com/) by Ubiquiti to find out if a point-to-point link is possible in your specific case. 
+
+Another option for longer range network is running a cable. If the distance is less than 100 meters, you can run ethernet. Longer than 100 meters requires some kind of fiber, which can get expensive. As always, cabling will generally be more reliable than wireless, just make sure to install any outdoor cabling properly, or consult a professional. For example, lightning strikes can hit your Ethernet cabling and/or the equipment on the other end, and should be protected against. 
+
+## What are the best channels to put my Wi-Fi on?
+
+With 2.4 GHz: 1, 6, or 11.
+With 5 GHz: It's more complicated, and depends on your local regulations. Avoid [DFS channels](https://en.wikipedia.org/wiki/List_of_WLAN_channels) (50-144 in the US) if possible.
+
+2.4 GHz Wi-Fi channels are counted 5 MHz apart, but a most Wi-Fi devices use a 20 MHz-wide channel. Imagine a 11-lane highway, but all the cars are a little over 4 lanes wide. When you are using "channel 6" in 2.4 GHz, you are really specifying the center of the channel you're using. Channel "6" uses the channels on either side of channel 6, from channel 4 to channel 8, with a bit of extra spacing on either side. 
+
+This means that an access point on channel 6 will overlap with an access point on the channels 4 through 8 . This is called co-channel interference. Interference will cause you to run into the same problems as if they were on the same channel. Packets will be dropped, resulting in bad performance and lots of retransmissions. 
+
+If possible, you should use non-overlapping channels. The common thing to do is to put the 2.4 GHz devices either on channel 1, 6 or 11. With 5 GHz devices you have more flexibility since there are more channels available. Refer to your local regulations for which channels are available in the 5 GHz spectrum.
+
+## What encryption should I use?
+
+For most home users, the best solution is WPA2-PSK. Avoid WPA1 or WEP, since those are obsolete and insecure. WPA3 is part of Wi-Fi 6, and should be used if it's available, as it's more secure than WPA2. A lot of devices you have probably do not support WPA3 yet, though.
+
+Another thing to keep in mind is to always use a strong password. Generally, this means more than 12 characters, with upper and lowercase characters, numbers, and special characters. Refrain from using words that can be found in a dictionary or things like birthdays, wedding days, etc. Don't use "password1". Only give your Wi-Fi password to people you trust.
+
+If it's an option, disable WPS. It is meant to make setup easier for new devices, but it is insecure and should not be used.
+
+## How can I bypass restrictions on my school/work/university network?
+
+When you are using a network that isn't yours, restriction are in place for a reason. If you're at work, your company may restrict what you are about to do on their network, and going against their policies is not something I'm going to help you with. 
+
+If possible, use some different means to access the Internet. If you have a more legitimate reasons to why you need this restriction lifted, talk to your IT staff about it. You do not want a pissed off sysadmin as your enemy. Similarly, if your parents restrict you Wi-Fi access and you're wondering how you can get it back? Ask them for it. Unless it's a network you pay for or are managing, you don't have the right to control it. 
+
+## Is Wi-Fi related to 5G? 
+
+Wi-Fi is used to connect devices in a local network. 5G is used to establish a connection to a cellular network provider. 
+
+Wi-Fi and your cellular connections use different spectrum, different techniques, and different equipment. They are not inter-compatible. 4G and 5G cellular connections are designed to work over longer ranges, so you don't need to have a cell tower in every front yard. Micro-tower 5G stations cover a smaller area, but even those are not going to give you a Wi-Fi connection.  
+
+## What is the difference between Wi-Fi and the Internet?
+
+Wi-Fi interconnects the devices in your local area. It allows all the wireless devices in your local area to communicate and reach each other, and the Internet.
+
+Your modem/router establishes the connection to your Internet Service Provider (AT&T, Comcast, Time Warner Cable, Grapevine, BT, Sky Broadband, etc.). The connection to your ISP, and the Internet is what you pay for on a monthly basis. If your router is connected to the internet, it will offer that connection to your home network, making the internet accessible over Wi-Fi. 
+
+Settings concerning your Wi-Fi such as channel, 802.11 protocol, connected clients and passwords are generally managed by you and do not affect your ISP connection. On the other hand, your internet speed is something set by your ISP. Most providers allow you to select a service tier, distinguished by the maximum download and upload speed. 
+
+Many ISPs will sell, lease or rent a Wi-Fi router to you. Those devices are often locked down and not the highest quality. Whenever possible, i suggest avoiding ISP-provided routers and supplying your own. Not only does that make you less dependent from your ISP, it also allows you to pick the right equipment for your network. Buying your own equipment will usually lead to better performance and less cost over time.
+
+## Is Wi-Fi OK to use for Gaming?
+
+For latency sensitive games like a lot of online multiplayer games, Wi-Fi usually isn't the best option. Wi-Fi will almost always have higher latency than a wired connection. Latency is the time it takes from you pressing a button to the action being performed on screen. A lot of things affect latency, and Wi-Fi is only one part. If possible, run a cable to your gaming PC or console.
+
+A lot of games will display your "ping" time in milliseconds. The lower the ping time, the better. If you see high ping times (100-200 ms, or higher), you may experience delays and lag. Moving to a wired connection is one thing that may help your ping times. If you're playing a more casual online game that isn't latency sensitive, usually Wi-Fi is fine for that. If what you are doing with Wi-Fi feels responsive, don't worry about it.
+
+## How does Wi-Fi work? 
+
+The [long answer](https://evanmccann.net/blog/wifi-101/how-wifi-works) involves a lot of background information on physics and electricity, but here's an analogy that might help.
+
+At a basic level, you can think of two people holding a jump rope. One person raises and lowers their arm quickly, creating a wave. With Wi-Fi, this person would represent your Wi-Fi router, or wireless access point. Keeping the same up and down motion is known as a [carrier wave](https://en.wikipedia.org/wiki/Carrier_wave). The person on the other end is the client device, such as a laptop or cell phone. When a wireless client joins the network and senses the carrier wave, it starts listening and waits for small differences in the signal.
+
+In our example, you can imagine feeling the jump rope going up and down, and then receiving a single motion to the right. That single motion to the right can be interpreted as a binary number 1. A motion to the left would be a binary 0. Chain enough 1’s and 0’s together and you can represent complicated things, like all the data on this webpage.
