@@ -88,7 +88,7 @@ Interference can cause poor connection speeds and mess up your day. In the WLAN 
 
 If you are affected, you will have very bad wireless speeds even though your device shows a full strength signal.
 
-I recommend a tool called inSSIDer. It is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). If you don't want to pay i recommend [Wi-Fi analyzer](https://play.google.com/store/apps/details?id=com.farproc.Wi-Fi.analyzer). InSSIDer will recomend you the best channel to put your access point on based on the Wi-Fi environment it sees.
+I recommend a tool called inSSIDer. It is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). If you don't want to pay i recommend [Wi-Fi analyzer](https://play.google.com/store/apps/details?id=com.farproc.wifi.analyzer). InSSIDer will recomend you the best channel to put your access point on based on the Wi-Fi environment it sees.
 
 
 # Q: What are the best channels to put my Wi-Fi on?
