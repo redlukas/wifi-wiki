@@ -1,6 +1,6 @@
 #Introduction: The Basics
 
-## What is Wi-Fi? https://www.reddit.com/r/wifi/wiki/edit/faq#What does Wi-Fi do? 
+## What is Wi-Fi? What does Wi-Fi do? 
 
 Wi-Fi is a brand name for wireless networking standards. Wi-Fi lets devices communicate by sending and receiving radio waves. 
 
