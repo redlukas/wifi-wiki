@@ -1,18 +1,18 @@
 #Introduction: The Basics
 
-## What is Wi-Fi? What does Wi-Fi do?
+## What is Wi-Fi? https://www.reddit.com/r/wifi/wiki/edit/faq#What does Wi-Fi do? 
 
-Wi-Fi is a brand name for wireless networking standards. Wi-Fi lets devices communicate by sending and receiving radio waves.
+Wi-Fi is a brand name for wireless networking standards. Wi-Fi lets devices communicate by sending and receiving radio waves. 
 
 Wi-Fi transmits data using microwaves, which are high-frequency radio waves, usually in the 2.4 GHz and 5 GHz ranges. Wi-Fi is more complicated than FM radio, but the basic underlying technology is the same. They both encode information into radio waves, which are received and decoded. FM radio does this for sound, Wi-Fi does this for computer data.
 
-## Where does Wi-Fi come from? What is a router? What is an access point?
+## Where does Wi-Fi come from? What is a router? What is an access point? 
 
 Wi-Fi comes from a wireless access point. Most consumer "routers" really cover multiple functions. They are usually a router, wireless access point, and switch — all in one device. Sometimes they even include a modem, if your Internet service provider (ISP) requires one.
 
 - **Routers** take data packets from one network (the Internet) and move them to another network (your internal, local network). It's the post office of networking, sending things where they need to go.
 - **Wireless access points** take in an Internet connection and turn it into radio waves (Wi-Fi), allowing you to connect wirelessly.
-- **Switches** multiply ports. Typical home routers include a 4-port switch, letting you plug a few devices into the LAN side of your router.
+- **Switches** multiply ports. Typical home routers include a 4-port switch, letting you plug a few devices into the LAN side of your router. 
 - **Modems** modulate and demodulate an encoded signal from your Internet service provider. This is sometimes integrated into the same device, and sometimes a separate device. If you have coax cable Internet, usually you will need a modem of some kind to get your Internet access. If you have DSL, same story, but with analog phone lines. If you have fiber internet, usually you will require an ONT (Optical Network Terminal) which does the same function. A modem or an ONT typically give you an Ethernet connection to plug into your router/switch/access point.
 
 # Q: I don't get Wi-Fi reception in my whole house, what do I do?
@@ -27,7 +27,7 @@ Repeaters take a weak Wi-Fi Signal and rebroadcast it. They are often a suggeste
 ##Will Mesh Wi-Fi be the end of all my woes?
 No. While Manufacturers want you to believe that Mesh is a silver Bullet, it certainly is not. Mesh simply combines the advantages of having a lot of spread out access points with the advantages of wireless communication, specifically not having to run cabling everywhere. While a repeater connects to the normal Wi-Fi the main router emmits (the same Wi-Fi any other devices would also connect to), a mesh basestation emits two seperate signals: one for normal devices (think phones, laptops,...) to connect to and a seperate one for the mesh satelites to connect to, called a backhaul. Those satelites in turn emit the same "normal" network for phones and laptops as the basestation, so those devices can connect to the same network via either the basestation or any of the satellites. What makes mesh extra cool is that the backhaul does not necessairily have to go from a satellite directly to the basestation, but it may jump from satellite to satellite before eventually reaching the basestation. All this does come at a cost, and the main one stems from the wireless backhaul. Since all the transmitted information has to be translated between electrical signals and airwaves at least once more than if the access point were connected to the router via cable and because this process takes time, you will experience significantly higher round-trip times for your traffic. This will hurt you especially for tasks that require you to send and recieve time-sensitive data like for online gaming (particularly FPS titles) and voice/videocaling. A second disadvantage is that by relying on a wireless backhaul you introduce a new network to the airwaves. This network has to fit in somewhere in the wireless spectrum, not interfere with any existing neworks and reliably reach the connected satellites. Basically you are introducing a whole host of new failure points. In conclusion: Mesh Wi-Fi might be right for you, but it is neither as foolproof nor as set-and-forget as manufacturers make it out to be.
 
-# Q: Why can't i just crank up the output power of my Wi-Fi gear so i'll have better reception? How about putting a bigger antenna on the device?
+# Q: Why can't i just crank up the output power of my Wi-Fi gear so i'll have better reception? How about putting a bigger antenna on the device? 
 First, your devices are not engineered for higher output. You'll simply fry them.
 
 Second, the FCC regulates the maximum power output of consumer devices. This is for a number of reasons. Some of them being less interference, less (potentional) damage to radio-sensitive persons, but foremost less traffic on an already well used frequency band. If you only have to avoid interference in a 20m radius, that's a lot less of a headache than in a 100m radius.
@@ -57,17 +57,17 @@ Wi-Fi 6 | ax | 11000 | 1-6
 
 There are a lot of differences between 2.4 and 5 GHz. They are both unlicensed spectrum, meaning that anyone can transmit there. The specific spectrum available depends on what country you're in, but generally:
 
-### 2.4 GHz
+### 2.4 GHz 
 - Longer range than 5 GHz
 - Generally slower than 5 GHz
 - Only 3 channels available — channels 1, 6 and 11. (20 MHz-wide)
 	- 20 MHz channels are most common
 	- 40 MHz channels can be used if bandwidth is more important than interference or range.
 - More prone to interference than 5 GHz
-	- Only 3 channels to use, if those are in use you have to wait.
+	- Only 3 channels to use, if those are in use you have to wait. 
 	- Microwave ovens, Bluetooth, baby monitors, florescent lights, smart home equipment, and tons of other things all interfere with 2.4 GHz frequencies. This can cause issues with Wi-Fi performance.
 
-### 5 GHz
+### 5 GHz 
 - Shorter range than 2.4 GHz
 	- 5 GHz signals travel roughly half as far
 	- Doesn't penetrate walls as well as 2.4 GHz
@@ -75,20 +75,20 @@ There are a lot of differences between 2.4 and 5 GHz. They are both unlicensed s
 	- Channels can be 20, 40, 80 or 160 MHz wide.
 	- Wide channels in 5 GHz will give you the fastest Wi-Fi speeds
 - Less prone to interference than 2.4 GHz
-	- 23 (20 MHz-wide) channels available
+	- 23 (20 MHz-wide) channels available 
 	- Less non-Wi-Fi devices use 5 GHz spectrum
-	- DFS Channels are special -- if your AP senses radar transmissions it is legally forced to back off. Don't use DFS channels if you live near an airport or other source of radar.
+	- DFS Channels are special -- if your AP senses radar transmissions it is legally forced to back off. Don't use DFS channels if you live near an airport or other source of radar. 
 
-It is important to note that there are no technical similarities between Wi-Fi signals on the 5GHz spectrum and 5G cellular connections, other than both using some kind of manipulation of the electromagnetic field. They are not intercompatible. 5GHz is used to connect multiple decices in your home together, 5G is used to establish a connectio to a cellular network provider.
+It is important to note that there are no technical similarities between Wi-Fi signals on the 5GHz spectrum and 5G cellular connections, other than both using some kind of manipulation of the electromagnetic field. They are not intercompatible. 5GHz is used to connect multiple decices in your home together, 5G is used to establish a connectio to a cellular network provider. 
 
 
 # Q: So how do i find out if my network interferes with one of my neighbours? AKA My wireless speed is terrible but all wired devices work fine
 
 Interference can cause poor connection speeds and mess up your day. In the WLAN protocol, only one device at a time can send data, every other device has to wait their turn. It's bad enough you have to wait for all of your devices, you would not want to also have to wait for your heighbour's. So it is essential, that you avoid being on the same channel as the access points next to you.
 
-If you are affected, you will have very bad wireless speeds even though your device shows a full strength signal.
+If you are affected, you will have very bad wireless speeds even though your device shows a full strength signal. 
 
-I recommend a tool called inSSIDer. It is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). If you don't want to pay i recommend [Wi-Fi analyzer](https://play.google.com/store/apps/details?id=com.farproc.wifi.analyzer). InSSIDer will recomend you the best channel to put your access point on based on the Wi-Fi environment it sees.
+I recommend a tool called inSSIDer. It is available [for Windows and Mac](http://www.inssider.com/downloads/) and there is even an [Android version](https://play.google.com/store/apps/details?id=com.metageek.inSSIDer). If you don't want to pay i recommend [Wi-Fi analyzer](https://play.google.com/store/apps/details?id=com.farproc.Wi-Fi.analyzer). InSSIDer will recomend you the best channel to put your access point on based on the Wi-Fi environment it sees.
 
 
 # Q: What are the best channels to put my Wi-Fi on?
@@ -98,7 +98,7 @@ Wi-Fi channels are spaced 5 Mhz apart, but a Wi-Fi signal has a bandwith of 20 M
 
 # Q: What encryption should I use?
 
-For home use, the best solution is WPA2-PSK. If the configuration page asks you wich cipher you want to use, choose CCMP. All but the very oldest devices will support this encryption.
+For home use, the best solution is WPA2-PSK. If the configuration page asks you wich cipher you want to use, choose CCMP. All but the very oldest devices will support this encryption. 
 
 Use a strong password. This means more than 12 characters, use upper and lowercase characters, numbers and special characters. Refrain from using words that can be found in a dictionairy or things like birthdays, wedding days etc.
 
@@ -111,7 +111,7 @@ Remember: if unauthorized persons gain access to your Wi-Fi, not only will they 
 
 # Q: How can I bypass restrictions on my school/work/university/parent's network?
 
-When you are using a network that isn't yours, restriction are in place for a reason. If you're at work, your company may restrict what you are about to do on their network, and going against their policies is not something we are going to help you with.
+When you are using a network that isn't yours, restriction are in place for a reason. If you're at work, your company may restrict what you are about to do on their network, and going against their policies is not something we are going to help you with. 
 
 
 # Q: My work/uni/hotel has some restriction on their network about how many devices i can connect to the Wi-Fi at a given time. How can i bypass this restriction?
@@ -131,3 +131,53 @@ To add to the confusion, many ISPs nowadays will sell, lease or rent a Wi-Fi rou
 # Q: What Wi-Fi should i use for Gaming?
 
 None. Multiplayer Gaming should be done on a wired connection. This answer is not gonna change just because you say that your case is special. The next best thing after a wired connection are Powerline and [MoCa](https://en.wikipedia.org/wiki/Multimedia_over_Coax_Alliance). But do keep in mind: The more you convert the Signal to different Protocols/transmission modes the more your Ping will go up.
+
+# Q: What can "they" see about my search/browsing history?
+
+The answer to this question is not really specific to Wi-Fi but applies to all 802.03 network as any potential snooping would be done on that level. 
+
+TL;DR: not much. Modern encryption methods obfuscate most of your traffic. A somewhat knowledgeable Person might find out *that* you visited a certain webpage, but in most cases they wont know what you did there.
+
+For the long answer, we need to distinguish between different parties interested in your traffic
+
+## Different attackers
+
+### Your Neighbours
+
+We're going to assume that your neighbours are not on the same network as you. In that case they can find out that a certain device is online, but as long as you are using WPA2 encryption on your Wi-Fi they wont know what sites you visit, let alone what you do on these sites. 
+
+### People on the same network as you
+
+Whitout rerouting your traffic they wont know more than your neighbours. If they feel especially l33t they might reroute your traffic. In this case they could see what sites you are visiting. As long as those sites are secured (you can see that they are by the lock icon in your browser's navigation bar) they wont see what you do on these sites. Your searches as well as your passwords are safe.
+
+### People with control to your router's control dashboard
+
+As all your internet traffic has to go trough your router, thisrouter can see all the internet traffic of all the users. Some routers offer logging features to keep track of certain metrics. But a router can only see as much as other people on the same network as you when they reroute your traffic. Again, make sure you browser always displays the lock icon beside the address you are visiting and your searches and passwords are safe. The router can however see what websites you are visiting.
+
+### Your internet service provider
+
+In the same way that all your internet traffic goes trough your router, all your traffic goes trough your Internet Service Provider (ISP). Therefore, they have about the same insight as someone with access to your router's management dashboard.
+
+### The institution owning/controling your device
+
+If you are browsing on a device that belongs to your employer or your school, they might have installed some special software on your device and/or on your network infrastructure. There are more many security policies than there are companies, so there is no way to give a general answer as to what they might be able to track. It is best to only use devices you do not control for their intended and approved purposes.
+
+### Govenemental Agencies
+
+Owing to the secretive nature of intelligence service, very little is known about the extent of surveillance on the internet. However, you must assume that nothing you do on the internet is kept a secret from the US's three letter agencies. There is currently no reliable info on the capabilities of other nation states. 
+
+## Mitigation strategies
+
+### Use private browsing
+
+This does nothing to cloak your internet traffic. It only affects the amount of data your machine keeps of your activity, not what others can see.
+
+### Change your DNS server
+
+DNS is a system that allows internet connected devices to look up the machine readable version of human readable web adresses. In the above paragraphs, whenever it was said that someone might see what websites your were visiting, this was being assumed that those someones provided an upstream DNS server that you were querying. By not using those DNS servers you will not trigger those loggers. However, you must use some DNS server, so it is a question of whom you trust the most with your precious DNS traffic. 
+
+There is additionally the option to encrypt the DNS traffic so even someone actively inspecting your traffic could not read your DNS requests. This setup, as well as the best choice of DNS server is out of scope for this wiki or this sub.
+
+### Use a VPN
+
+Normally your internet traffic goes trough your router to your ISP's network and then it hits the internet. If you use a VPN, all your traffic is encrypted and gets sent from your router to your ISP's network, over the internet to your VPN server where it gets decrypted. From there it behaves just like ordinary traffic from that server. Meaning to say it goes to the VPN server's router, to its ISP's network and then hits the internet. Responses take exactly the opposite route. All this to say that VPNs are not magic bullets. Your traffic has to be routed to the internet somewhere. A VPN merely changes the location where this occurs. So it again becomes a question of whom you trust the most. If you suspect snoopers close to you (like when you have to connect to a public Wi-Fi network) using a VPN on your device can certainly alleviate many of the security concerns. But it does nothing against nation states or entities controlling your device.
