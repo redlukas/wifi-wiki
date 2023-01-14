@@ -16,7 +16,7 @@ This starts with providing as much info about your setup as possible. Informatio
 * What is the Make and Model of the Devices involved?
 
 ##Important for speed related questions:
-Before you post anything about your upload/download speed, hook your device up to your router with an ethernet cable and rerun the test. If it is more or less the same, your problem is not WiFi related and does not belong in this sub. If you do not run the wired test we will not be able to help you, as it would be the first question we'd ask you anyway.
+Before you post anything about your upload/download speed, hook your device up to your router with an ethernet cable and rerun the test. If it is more or less the same, your problem is not WiFi related and does not belong in this sub. If you do not run the wired test we will not be able to help you, as it would be the first question we'd ask you anyway. It is also important to test your speeds locally. This means no speedtests over the internet (sevices like fast.com, speedtest.net, steam game downloads,...). iPerf is the recommended tool to make local speedtests.
 
 #Read the Wiki
 It contains a lot of answers to commonly asked questions. If your post was removed but you feel like your question has not been answered by the FAQ, feel free to resubmit your question with a [RESUB] tag.
