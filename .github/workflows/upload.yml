@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: push
-        uses: redlukas/reddit_wiki_updater@v0.1
+        uses: redlukas/reddit_wiki_updater@v0.2
         with:
           sub_name: 'wifi'
           reddit_client_id: ${{ secrets.REDDIT_CLIENT_ID }}
